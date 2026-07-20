@@ -1,0 +1,77 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  USER
+}
+
+enum ContactStatus {
+  PENDING
+  RESPONDED
+}
+
+model User {
+  id              Int            @id @default(autoincrement())
+  email           String         @unique
+  password        String
+  role            Role           @default(USER)
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  respondedContacts ContactQuery[]
+}
+
+model RevokedToken {
+  id        Int      @id @default(autoincrement())
+  jti       String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
+
+model ContactQuery {
+  id           Int           @id @default(autoincrement())
+  name         String
+  email        String
+  message      String
+  status       ContactStatus @default(PENDING)
+  response     String?
+  respondedAt  DateTime?
+  respondedById Int?
+  respondedBy  User?         @relation(fields: [respondedById], references: [id], onDelete: SetNull)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+}
+
+model NewsletterSubscriber {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
+
+model Carrier {
+  id              Int      @id @default(autoincrement())
+  name            String
+  contactInfo     String
+  servicesOffered String   @default("internship openings")
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model InternshipApplication {
+  id          Int      @id @default(autoincrement())
+  name        String
+  email       String
+  phone       String
+  location    String?
+  education   String?
+  experience  String?
+  motivation  String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

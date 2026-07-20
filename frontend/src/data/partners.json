@@ -1,0 +1,578 @@
+[
+    {
+        "id": 1,
+        "name": "Aananda Institute",
+        "website": "https://aanandainstitute.org",
+        "image": "/partners/p1.png"
+    },
+    {
+        "id": 2,
+        "name": "ACHIEVERS CONSULTANCY & SERVICES (PVT) LTD",
+        "website": "https://achieversconsultancy.com",
+        "image": "/partners/p2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Action Research Foundation",
+        "website": "https://actionresearchfoundation.org",
+        "image": "/partners/p3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "ACTION YOUTH FOR DEVELOPMENT-GHANA",
+        "website": "https://actionyouthfordevelopment.org",
+        "image": "/partners/p4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Africa ICT Right",
+        "website": "https://africaictright.org",
+        "image": "/partners/p5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "African Science Frontiers Initiatives (ASFI)",
+        "website": "https://africansciencefrontiers.org",
+        "image": "/partners/p6.png"
+    },
+    {
+        "id": 7,
+        "name": "Agricultural Technical Institute",
+        "website": "https://ati.edu",
+        "image": "/partners/p7.png"
+    },
+    {
+        "id": 8,
+        "name": "Agro App Services",
+        "website": "https://agroappservices.com",
+        "image": "/partners/p8.jpeg"
+    },
+    {
+        "id": 9,
+        "name": "AgroZee Organics Pvt. Ltd",
+        "website": "https://agrozee.com",
+        "image": "/partners/p9.png"
+    },
+    {
+        "id": 10,
+        "name": "ALERT Engineering Plc",
+        "website": "https://alertengineering.com",
+        "image": "/partners/p10.png"
+    },
+    {
+        "id": 11,
+        "name": "ALIG Educational and Welfare Society",
+        "website": "https://aligwelfare.org",
+        "image": "/partners/p11.png"
+    },
+    {
+        "id": 12,
+        "name": "ASSOCIATION FOR ENVIRONMENT AND SCIENCE",
+        "website": "https://afeas.org",
+        "image": "/partners/p12.jpeg"
+    },
+    {
+        "id": 13,
+        "name": "Baiid Auto Technologies Pvt Ltd",
+        "website": "https://baiidauto.com",
+        "image": "/partners/p13.png"
+    },
+    {
+        "id": 14,
+        "name": "Bangladesh NGOs Network for Radio and Communication (BNNRC)",
+        "website": "https://bnnrc.net",
+        "image": "/partners/p14.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Berojgar Mahila Sewa Samiti",
+        "website": "https://berojgarmahilasewasamiti.org",
+        "image": "/partners/p15.webp"
+    },
+    {
+        "id": 16,
+        "name": "Center for Energy and Carbon Efficiency",
+        "website": "https://cece.org",
+        "image": "/partners/p16.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Center for People and Environ",
+        "website": "https://www.cpenet.org",
+        "image": "/partners/p17.png"
+    },
+    {
+        "id": 18,
+        "name": "Central Laboratory for Agricultural Climate, Agricultural Research Center",
+        "website": "https://arc.sci.eg",
+        "image": "/partners/p18.png"
+    },
+    {
+        "id": 19,
+        "name": "Centre for Social Mobilization and Sustainable Development (CENSODEV)",
+        "website": "https://censodev.org",
+        "image": "/partners/p19.png"
+    },
+    {
+        "id": 20,
+        "name": "Christ University",
+        "website": "https://christuniversity.in",
+        "image": "/partners/p20.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Clean Climate and Environment Campaign Initiative",
+        "website": "https://cleanclimate.org",
+        "image": "/partners/p21.jpeg"
+    },
+    {
+        "id": 22,
+        "name": "Community Association for Sustainable Development (CASuDeV)",
+        "website": "https://casudev.org",
+        "image": "/partners/p22.png"
+    },
+    {
+        "id": 23,
+        "name": "Community Development Pathway Foundation",
+        "website": "https://cdpfoundation.org",
+        "image": "/partners/p23.jpg"
+    },
+    {
+        "id": 24,
+        "name": "Crime Control and Reform Organization",
+        "website": "https://crimecontrolreform.org",
+        "image": "/partners/p24.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Department of Interdisciplinary Studies-IIHS, Himachal Pradesh University",
+        "website": "https://hpuniv.ac.in",
+        "image": "/partners/p25.png"
+    },
+    {
+        "id": 26,
+        "name": "Dr Rubina Nusrat",
+        "website": "",
+        "image": ""
+    },
+    {
+        "id": 27,
+        "name": "EARTH CARE GHANA",
+        "website": "https://earthcareghana.org",
+        "image": "/partners/p27.jpeg"
+    },
+    {
+        "id": 28,
+        "name": "ECOR Foundation",
+        "website": "https://ecorfoundation.org",
+        "image": "/partners/p28.png"
+    },
+    {
+        "id": 29,
+        "name": "EIRENE URITHI FOUNDATION (Peace Heritage Foundation)",
+        "website": "https://eireneurithi.org",
+        "image": "/partners/p29.jpg"
+    },
+    {
+        "id": 30,
+        "name": "Epic Sustainability",
+        "website": "https://epicsustainability.com",
+        "image": "/partners/p30.jpeg"
+    },
+    {
+        "id": 31,
+        "name": "Federal Polytechnic Offa",
+        "website": "https://fedpoffaonline.edu.ng",
+        "image": "/partners/p31.png"
+    },
+    {
+        "id": 32,
+        "name": "Freeworld International (FI)",
+        "website": "https://freeworldinternational.org",
+        "image": "/partners/p32.jpg"
+    },
+    {
+        "id": 33,
+        "name": "Global Media Foundation",
+        "website": "https://globalmediafoundation.org",
+        "image": "/partners/p33.jpg"
+    },
+    {
+        "id": 34,
+        "name": "Global Peace Innovators FZE",
+        "website": "https://globalpeaceinnovators.com",
+        "image": "/partners/p34.png"
+    },
+    {
+        "id": 35,
+        "name": "Global Peace Let's Talk",
+        "website": "https://globalpeaceletstalk.org",
+        "image": "/partners/p35.jpeg"
+    },
+    {
+        "id": 36,
+        "name": "GMH Foundation",
+        "website": "https://gmhfoundation.org",
+        "image": "/partners/p36.jpg"
+    },
+    {
+        "id": 37,
+        "name": "Government Degree College Kathua",
+        "website": "https://gdckathua.in",
+        "image": "/partners/p37.jpg"
+    },
+    {
+        "id": 38,
+        "name": "Government Department",
+        "website": "",
+        "image": ""
+    },
+    {
+        "id": 39,
+        "name": "Government P.G. College Nagrota Bagwan, District Kangra, Himachal Pradesh",
+        "website": "https://gpgcnagrotabagwan.edu.in",
+        "image": ""
+    },
+    {
+        "id": 40,
+        "name": "Green Field Foundation",
+        "website": "https://greenfieldfoundation.org",
+        "image": "/partners/p40.jpg"
+    },
+    {
+        "id": 41,
+        "name": "Health Care",
+        "website": "",
+        "image": "/partners/p41.jpg"
+    },
+    {
+        "id": 42,
+        "name": "Heritage Foundation Jalgaon",
+        "website": "https://heritagefoundationjalgaon.org",
+        "image": "/partners/p42.png"
+    },
+    {
+        "id": 43,
+        "name": "Horticulture Association of Bhutan",
+        "website": "https://hab.bt",
+        "image": "/partners/p43.jpg"
+    },
+    {
+        "id": 44,
+        "name": "I Have Conscience Foundation",
+        "website": "https://ihaveconscience.org",
+        "image": "/partners/p44.jpg"
+    },
+    {
+        "id": 45,
+        "name": "Independent Learning Organization",
+        "website": "https://independentlearning.org",
+        "image": "/partners/p45.jpg"
+    },
+    {
+        "id": 46,
+        "name": "Institute for Sustainable Energy and Environmental Solutions",
+        "website": "https://isees.org",
+        "image": "/partners/p46.png"
+    },
+    {
+        "id": 47,
+        "name": "Jawaharlal Nehru College, Boko",
+        "website": "https://jncollegeboko.ac.in",
+        "image": "/partners/p47.png"
+    },
+    {
+        "id": 48,
+        "name": "JK College of Science and Research Technology",
+        "website": "https://jkcollege.edu.in",
+        "image": "/partners/p48.jpg"
+    },
+    {
+        "id": 49,
+        "name": "Judaav Foundation",
+        "website": "https://judaavfoundation.org",
+        "image": "/partners/p49.png"
+    },
+    {
+        "id": 50,
+        "name": "Justice Basheer Ahmed Sayeed College for Women, Chennai",
+        "website": "https://jbascollege.edu.in",
+        "image": "/partners/p50.jpg"
+    },
+    {
+        "id": 51,
+        "name": "K.P.B. HINDUJA COLLEGE OF COMMERCE",
+        "website": "https://hindujacollege.com",
+        "image": "/partners/p51.jpg"
+    },
+    {
+        "id": 52,
+        "name": "Little Drops",
+        "website": "https://littledrops.org",
+        "image": "/partners/p52.jpg"
+    },
+    {
+        "id": 53,
+        "name": "Malang National Institute of Technology",
+        "website": "https://polinema.ac.id",
+        "image": "/partners/p53.jpg"
+    },
+    {
+        "id": 54,
+        "name": "Mangaldai Commerce College",
+        "website": "https://mangaldaicommercecollege.ac.in",
+        "image": "/partners/p54.jpg"
+    },
+    {
+        "id": 55,
+        "name": "Ministry of Livestock Fisheries and Animal Industries",
+        "website": "",
+        "image": "/partners/p55.png"
+    },
+    {
+        "id": 56,
+        "name": "NIDAN SEVA PARISHAD",
+        "website": "https://nidansevaparishad.org",
+        "image": "/partners/p56.jpg"
+    },
+    {
+        "id": 57,
+        "name": "Nkhata Bay District Council",
+        "website": "https://nkhatabaydc.gov.mw",
+        "image": "/partners/p57.jpg"
+    },
+    {
+        "id": 58,
+        "name": "NOCER HAI RAINBOW CONSUMERS COUNCIL (NOCER India)",
+        "website": "https://nocerindia.org",
+        "image": "/partners/p58.png"
+    },
+    {
+        "id": 59,
+        "name": "North West Association of Development Organisations (NWADO)",
+        "website": "https://nwado.org",
+        "image": "/partners/p59.jpg"
+    },
+    {
+        "id": 60,
+        "name": "Offinso Partners in Sustainable Development - OPSD",
+        "website": "https://opsd.org.gh",
+        "image": "/partners/p60.png"
+    },
+    {
+        "id": 61,
+        "name": "P.A.H.A.L. Foundation",
+        "website": "https://pahalfoundation.org",
+        "image": "/partners/p61.png"
+    },
+    {
+        "id": 62,
+        "name": "Pragathi Association for Rural Development (PARD INDIA)",
+        "website": "https://pardindia.org",
+        "image": "/partners/p62.jpg"
+    },
+    {
+        "id": 63,
+        "name": "Progyan Services LLP",
+        "website": "https://progyanservices.com",
+        "image": "/partners/p63.jpg"
+    },
+    {
+        "id": 64,
+        "name": "Rajputana Society of Natural History",
+        "website": "https://rsnh.in",
+        "image": "/partners/p64.jpg"
+    },
+    {
+        "id": 65,
+        "name": "Rakshita Welfare Society",
+        "website": "https://rakshitawelfare.org",
+        "image": "/partners/p65.jpeg"
+    },
+    {
+        "id": 66,
+        "name": "Rosa Care Organisation",
+        "website": "https://rosacare.org",
+        "image": "/partners/p66.jpg"
+    },
+    {
+        "id": 67,
+        "name": "RTFED & HRD",
+        "website": "https://rtfed.org",
+        "image": "/partners/p67.jpg"
+    },
+    {
+        "id": 68,
+        "name": "Rural Farmer Care Initiative (RFCI)",
+        "website": "https://rfci.org",
+        "image": "/partners/p68.jpeg"
+    },
+    {
+        "id": 69,
+        "name": "Safisana Ghana Limited",
+        "website": "https://safisana.com",
+        "image": "/partners/p69.jpg"
+    },
+    {
+        "id": 70,
+        "name": "Samajik Yuva Sangathan Sansthan (SYSS)",
+        "website": "https://syss.org.in",
+        "image": "/partners/p70.png"
+    },
+    {
+        "id": 71,
+        "name": "Samarth India",
+        "website": "https://samarthindia.org",
+        "image": "/partners/p71.jpg"
+    },
+    {
+        "id": 72,
+        "name": "Sankandi Youth Development Association",
+        "website": "https://sankandiyouth.org",
+        "image": "/partners/p72.jpg"
+    },
+    {
+        "id": 73,
+        "name": "SARAL SAIKSHANIK VA SAMAJIK VIKAS PRATHISTHAN",
+        "website": "https://saralprathisthan.org",
+        "image": "/partners/p73.jpg"
+    },
+    {
+        "id": 74,
+        "name": "Sathyabama Institute of Science and Technology",
+        "website": "https://www.sathyabama.ac.in",
+        "image": "/partners/p74.jpg"
+    },
+    {
+        "id": 75,
+        "name": "Savannah Women Integrated Development Agency (SWIDA Ghana)",
+        "website": "https://swidaghana.org",
+        "image": "/partners/p75.jpg"
+    },
+    {
+        "id": 76,
+        "name": "School of Behavioural Sciences, Mahatma Gandhi University, Kottayam",
+        "website": "https://www.mgu.ac.in",
+        "image": "/partners/p76.png"
+    },
+    {
+        "id": 77,
+        "name": "SHABNAM RESOURCES",
+        "website": "https://shabnamresources.com",
+        "image": "/partners/p77.jpeg"
+    },
+    {
+        "id": 78,
+        "name": "Shramyog",
+        "website": "https://shramyog.org",
+        "image": "/partners/p78.jpg"
+    },
+    {
+        "id": 79,
+        "name": "Shri Wagheshwar Gramvikas Pratishthan's",
+        "website": "https://swgp.org.in",
+        "image": "/partners/p79.jpg"
+    },
+    {
+        "id": 80,
+        "name": "St. Joseph's College For Women",
+        "website": "https://stjosephscw.ac.in",
+        "image": "/partners/p80.jpg"
+    },
+    {
+        "id": 81,
+        "name": "STAT Organization for Statistical Data Analysis and Training",
+        "website": "https://statorg.com",
+        "image": "/partners/p81.jpeg"
+    },
+    {
+        "id": 82,
+        "name": "Tara Digital",
+        "website": "https://taradigital.in",
+        "image": "/partners/p82.jpg"
+    },
+    {
+        "id": 83,
+        "name": "THE NEEDY TODAY",
+        "website": "https://theneedytoday.org",
+        "image": "/partners/p83.jpg"
+    },
+    {
+        "id": 84,
+        "name": "Tilo General Merchants",
+        "website": "https://tilomerchants.com",
+        "image": "/partners/p84.jpg"
+    },
+    {
+        "id": 85,
+        "name": "UNIVERSITY OF KABRIDAHAR (KEBRI DEHAR UNIVERSITY)",
+        "website": "https://kdu.edu.et",
+        "image": "/partners/p85.jpeg"
+    },
+    {
+        "id": 86,
+        "name": "V for Vocation Foundation",
+        "website": "https://vforvocation.org",
+        "image": "/partners/p86.jpg"
+    },
+    {
+        "id": 87,
+        "name": "Vichar Samiti",
+        "website": "https://vicharsamiti.org",
+        "image": "/partners/p87.jpg"
+    },
+    {
+        "id": 88,
+        "name": "Vivas Arts and Science Women's College, Subramaniapuram, Vasudevanallur, Tamil Nadu",
+        "website": "https://vivascollege.ac.in",
+        "image": "/partners/p88.jpg"
+    },
+    {
+        "id": 89,
+        "name": "WATER RESOURCES INVESTIGATION & DEVELOPMENT DEPARTMENT (WBADMIP)",
+        "website": "https://wbadmip.org",
+        "image": "/partners/p89.jpg"
+    },
+    {
+        "id": 90,
+        "name": "WCB Research Foundation",
+        "website": "https://wcbresearch.org",
+        "image": "/partners/p90.jpeg"
+    },
+    {
+        "id": 91,
+        "name": "Wolaita Sodo University",
+        "website": "https://www.wsu.edu.et",
+        "image": "/partners/p91.jpg"
+    },
+    {
+        "id": 92,
+        "name": "Women Capacity and Advocacy Initiative",
+        "website": "https://wocai.org",
+        "image": "/partners/p92.jpg"
+    },
+    {
+        "id": 93,
+        "name": "Yayasan Sabumi Nusantara Jaya",
+        "website": "https://sabuminusantara.org",
+        "image": "/partners/p93.jpeg"
+    },
+    {
+        "id": 94,
+        "name": "Young India Housing Private Limited",
+        "website": "https://youngindiahousing.com",
+        "image": "/partners/p94.png"
+    },
+    {
+        "id": 95,
+        "name": "Youth and Environment Vision (YEV)",
+        "website": "https://yev.org",
+        "image": "/partners/p95.jpg"
+    },
+    {
+        "id": 96,
+        "name": "Zero to One Kerala",
+        "website": "https://zerotoonekerala.org",
+        "image": "/partners/p96.jpeg"
+    }
+]

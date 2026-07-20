@@ -1,0 +1,224 @@
+{
+  "events": [
+    {
+      "id": "himalayan-tribes-2023",
+      "title": "International Hybrid Conference on History and Culture of Himalayan Tribes: Status and Continuity",
+      "type": "Conference",
+      "startTime": "2023-10-27T12:00:00",
+      "endTime": "2023-10-28T12:00:00",
+      "brochure": "#",
+      "location": "Haryana",
+      "organiser": "netwrok@gfsrd.org",
+      "mediaCoverage": ""
+    },
+    {
+      "id": "bamboo-sdgs-2023",
+      "title": "International online conference on Bamboo for Accelerating Sustainable Development Goals (SDGs)",
+      "type": "Conference",
+      "startTime": "2023-09-18T18:00:00",
+      "endTime": "2023-09-18T20:00:00",
+      "brochure": "#",
+      "location": "Meet Link",
+      "organiser": "netwrok@gfsrd.org",
+      "mediaCoverage": ""
+    },
+    {
+      "id": "indigenous-people-2023",
+      "title": "International Conference on Indigenous People: Issues and Challenges",
+      "type": "Conference",
+      "startTime": "2023-08-09T18:00:00",
+      "endTime": "2023-08-09T20:30:00",
+      "brochure": "#",
+      "location": "Meet Link",
+      "organiser": "netwrok@gfsrd.org",
+      "mediaCoverage": ""
+    },
+    {
+      "id": "social-work-sciences-2023",
+      "title": "International Conference on Social Work, Sciences, Technologies, Environment, Climate Change, Disaster Management, Health, Wellbeing, Sustainable Development 2023",
+      "type": "Conference",
+      "startTime": "2023-08-13T18:30:00",
+      "endTime": "2023-08-22T20:00:00",
+      "brochure": "#",
+      "location": "Zoom Link",
+      "organiser": "netwrok@gfsrd.org",
+      "mediaCoverage": ""
+    },
+    {
+      "id": "friendship-solidarity-2023",
+      "title": "International Conference on Friendship, Human Solidarity, Diversity, Trafficking, Exploitation, Slavery, Awareness, Education, Employment, Environment, Health, Well Being, Sustainable Development 2023",
+      "type": "Conference",
+      "startTime": "2023-08-13T18:30:00",
+      "endTime": "2023-08-13T18:30:00",
+      "brochure": "#",
+      "location": "Zoom Link",
+      "organiser": "netwrok@gfsrd.org",
+      "mediaCoverage": ""
+    },
+    {
+      "id": "youth-education-careers-2023",
+      "title": "Two Days International Conference on Youth, Education, Careers, Training, Skill Development, Employment, Environment, Health, Well being, Sustainable Development 2023 (ICYECTSDEEHWBSD-2023) On Occasion of World Youth Skills Day 2023",
+      "type": "Conference",
+      "startTime": "2023-07-15T18:00:00",
+      "endTime": "2023-07-16T21:00:00",
+      "brochure": "#",
+      "location": "Zoom Link",
+      "organiser": "netwrok@gfsrd.org",
+      "mediaCoverage": ""
+    },
+    {
+      "id": "psychology-counseling-2023",
+      "title": "International Conference on Psychology Counseling, Behavioral Sciences, Social Sciences, Health, Well being and Sustainable Development 2023",
+      "type": "Conference",
+      "startTime": "2023-04-27T17:30:00",
+      "endTime": "2023-05-01T19:00:00",
+      "brochure": "#",
+      "location": "To be updated from the image",
+      "organiser": "netwrok@gfsrd.org",
+      "mediaCoverage": ""
+    },
+    {
+      "id": "sustainable-rural-development-2023",
+      "title": "Hybrid International Conference on Sustainable Rural Development",
+      "type": "Conference",
+      "startTime": "2023-06-06T08:00:00",
+      "endTime": "2023-06-06T20:00:00",
+      "brochure": "#",
+      "location": "National Institute of Technology Malang Hall, East Java",
+      "organiser": "netwrok@gfsrd.org",
+      "mediaCoverage": ""
+    },
+    {
+      "id": "girl-child-virtual-2021",
+      "title": "A one day girl child virtual conference",
+      "type": "Conference",
+      "startTime": "2021-10-11T17:00:00",
+      "endTime": "2021-10-11T20:00:00",
+      "brochure": "#",
+      "location": "Virtual",
+      "organiser": "netwrok@gfsrd.org",
+      "mediaCoverage": ""
+    },
+    {
+      "id": "education-management-social-science-2022",
+      "title": "2nd International Conference on Education, Management, And Social Science",
+      "type": "Conference",
+      "startTime": "2022-06-03T08:00:00",
+      "endTime": "2022-06-03T20:00:00",
+      "brochure": "#",
+      "location": "Virtual",
+      "organiser": "netwrok@gfsrd.org",
+      "mediaCoverage": ""
+    },
+  {
+    "id": "global-conference-localising-sdgs-2-2020",
+    "title": "Global Conference on Localising Sustainable Development Goals (SDGs-2)",
+    "type": "Conference",
+    "startTime": "2020-12-12T10:00:00",
+    "endTime": "2020-12-13T13:30:00",
+    "brochure": "#",
+    "location": "Virtual",
+    "organiser": "netwrok@gfsrd.org",
+    "mediaCoverage": ""
+  },
+  {
+    "id": "world-summit-sdg-csr-2021",
+    "title": "World Summit on Strategic Implementation of SDG & CSR",
+    "type": "Conference",
+    "startTime": "2021-09-25T09:30:00",
+    "endTime": "2021-09-25T23:59:00",
+    "brochure": "#",
+    "location": "Virtual",
+    "organiser": "netwrok@gfsrd.org",
+    "mediaCoverage": ""
+  },
+  {
+    "id": "girl-child-virtual-conference-2021",
+    "title": "A one day girl child virtual conference",
+    "type": "Conference",
+    "startTime": "2021-10-11T17:00:00",
+    "endTime": "2021-10-11T20:00:00",
+    "brochure": "#",
+    "location": "Virtual",
+    "organiser": "netwrok@gfsrd.org",
+    "mediaCoverage": ""
+  },
+  {
+    "id": "international-climate-change-2022",
+    "title": "3rd International Conference on Climate Change",
+    "type": "Conference",
+    "startTime": "2022-06-02T08:00:00",
+    "endTime": "2022-06-02T20:00:00",
+    "brochure": "#",
+    "location": "Virtual",
+    "organiser": "netwrok@gfsrd.org",
+    "mediaCoverage": ""
+  },
+  {
+    "id": "education-management-social-science-2022",
+    "title": "2nd International Conference on Education, Management, And Social Science",
+    "type": "Conference",
+    "startTime": "2022-06-03T08:00:00",
+    "endTime": "2022-06-03T20:00:00",
+    "brochure": "#",
+    "location": "Virtual",
+    "organiser": "netwrok@gfsrd.org",
+    "mediaCoverage": ""
+  },
+  {
+    "id": "international-sustainable-agriculture-2022",
+    "title": "International Conference on Sustainable Agriculture",
+    "type": "Conference",
+    "startTime": "2022-10-10T10:00:00",
+    "endTime": "2022-10-11T16:00:00",
+    "brochure": "#",
+    "location": "Virtual",
+    "organiser": "netwrok@gfsrd.org",
+    "mediaCoverage": ""
+  },
+  {
+    "id": "global-conference-localising-sdgs-5-2023",
+    "title": "Global Conference on Localising Sustainable Development Goals (SDGs-5)",
+    "type": "Conference",
+    "startTime": "2023-01-18T18:30:00",
+    "endTime": "2023-01-19T21:00:00",
+    "brochure": "#",
+    "location": "Virtual",
+    "organiser": "netwrok@gfsrd.org",
+    "mediaCoverage": ""
+  },
+  {
+    "id": "world-social-work-day-2023",
+    "title": "International Conference on World Social Work Day 2023",
+    "type": "Conference",
+    "startTime": "2023-03-18T18:00:00",
+    "endTime": "2023-03-31T22:00:00",
+    "brochure": "#",
+    "location": "Zoom link in brochure",
+    "organiser": "netwrok@gfsrd.org",
+    "mediaCoverage": ""
+  },
+  {
+    "id": "social-work-diversity-inclusion-2023",
+    "title": "International Conference on Social Work, Sciences, Respecting Diversity Inclusion, Social Action & Sustainable Development 2023",
+    "type": "Conference",
+    "startTime": "2023-03-18T18:00:00",
+    "endTime": "2023-03-27T21:00:00",
+    "brochure": "#",
+    "location": "Zoom Link",
+    "organiser": "netwrok@gfsrd.org",
+    "mediaCoverage": ""
+  },
+  {
+    "id": "second-virtual-environment-sustainable-development-2022",
+    "title": "Second International Virtual Conference Environment & Sustainable Development",
+    "type": "Conference",
+    "startTime": "2022-09-03T10:00:00",
+    "endTime": "2022-09-05T16:00:00",
+    "brochure": "#",
+    "location": "Virtual",
+    "organiser": "netwrok@gfsrd.org",
+    "mediaCoverage": ""
+  }
+]
+}

@@ -1,0 +1,224 @@
+{
+  "global": [
+    {
+      "id": "head-office",
+      "name": "Head Office - India",
+      "address": "Vill + P.O – Bahiri P.S – Bolpur, Dist – Birbhum, West Bengal, India PIN – 731240",
+      "coordinates": [
+        87.72,
+        23.67
+      ]
+    },
+    {
+      "id": "asia",
+      "name": "Asia",
+      "address": "576 South Street TownPress, Malang, Indonesia. VT 13245\nPhone: (123) 456-7891",
+      "coordinates": [
+        112.63,
+        -7.98
+      ]
+    },
+    {
+      "id": "europe",
+      "name": "Europe",
+      "address": "Flat 150, Trinity Square, 23-59 Staines Road, Hounslow, Middlesex, TW3 3GF",
+      "coordinates": [
+        -0.36,
+        51.47
+      ]
+    },
+    {
+      "id": "north-america",
+      "name": "North America",
+      "address": "104 W Mountain Sage Drive, Phoenix, Arizona 85045, USA",
+      "coordinates": [
+        -111.97,
+        33.28
+      ]
+    },
+    {
+      "id": "south-america",
+      "name": "South America",
+      "address": "639 Manoel Soares da Rocha Street, zip code 13085-055, Campinas city, São Paulo State, Brazil",
+      "coordinates": [
+        -47.06,
+        -22.91
+      ]
+    },
+    {
+      "id": "africa",
+      "name": "Africa",
+      "address": "Block 27 Flat C Aliyu Mustapha Street, Gwarinpa Setraco Abuja-Nigeria",
+      "coordinates": [
+        7.49,
+        9.06
+      ]
+    },
+    {
+      "id": "australia",
+      "name": "Australia",
+      "address": "4 Perlinte ViewNorth Coogee WA 6163, Perth, Australia",
+      "coordinates": [
+        115.86,
+        -31.94
+      ]
+    }
+  ],
+  "india": [
+    {
+      "id": "an",
+      "name": "Andaman and Nicobar Islands",
+      "address": ""
+    },
+    {
+      "id": "ap",
+      "name": "Andhra Pradesh",
+      "address": ""
+    },
+    {
+      "id": "ar",
+      "name": "Arunachal Pradesh",
+      "address": ""
+    },
+    {
+      "id": "as",
+      "name": "Assam",
+      "address": ""
+    },
+    {
+      "id": "br",
+      "name": "Bihar",
+      "address": ""
+    },
+    {
+      "id": "ct",
+      "name": "Chhattisgarh",
+      "address": ""
+    },
+    {
+      "id": "dl",
+      "name": "Delhi",
+      "address": ""
+    },
+    {
+      "id": "ga",
+      "name": "Goa",
+      "address": ""
+    },
+    {
+      "id": "gj",
+      "name": "Gujarat",
+      "address": ""
+    },
+    {
+      "id": "hr",
+      "name": "Haryana",
+      "address": ""
+    },
+    {
+      "id": "hp",
+      "name": "Himachal Pradesh",
+      "address": ""
+    },
+    {
+      "id": "jk",
+      "name": "Jammu and Kashmir",
+      "address": ""
+    },
+    {
+      "id": "jh",
+      "name": "Jharkhand",
+      "address": ""
+    },
+    {
+      "id": "ka",
+      "name": "Karnataka",
+      "address": ""
+    },
+    {
+      "id": "kl",
+      "name": "Kerala",
+      "address": ""
+    },
+    {
+      "id": "mp",
+      "name": "Madhya Pradesh",
+      "address": ""
+    },
+    {
+      "id": "mh",
+      "name": "Maharashtra",
+      "address": ""
+    },
+    {
+      "id": "mn",
+      "name": "Manipur",
+      "address": ""
+    },
+    {
+      "id": "ml",
+      "name": "Meghalaya",
+      "address": ""
+    },
+    {
+      "id": "mz",
+      "name": "Mizoram",
+      "address": ""
+    },
+    {
+      "id": "nl",
+      "name": "Nagaland",
+      "address": ""
+    },
+    {
+      "id": "or",
+      "name": "Odisha",
+      "address": ""
+    },
+    {
+      "id": "pb",
+      "name": "Punjab",
+      "address": ""
+    },
+    {
+      "id": "rj",
+      "name": "Rajasthan",
+      "address": ""
+    },
+    {
+      "id": "sk",
+      "name": "Sikkim",
+      "address": ""
+    },
+    {
+      "id": "tn",
+      "name": "Tamil Nadu",
+      "address": ""
+    },
+    {
+      "id": "tg",
+      "name": "Telangana",
+      "address": ""
+    },
+    {
+      "id": "tr",
+      "name": "Tripura",
+      "address": ""
+    },
+    {
+      "id": "up",
+      "name": "Uttar Pradesh",
+      "address": ""
+    },
+    {
+      "id": "ut",
+      "name": "Uttarakhand",
+      "address": ""
+    },
+    {
+      "id": "wb",
+      "name": "West Bengal",
+      "address": ""
+    }
+  ]
+}

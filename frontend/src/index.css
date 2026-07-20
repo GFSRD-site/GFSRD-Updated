@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Forum for Sustainable Rural Development - Design System
+   Inspired by nature, sustainability, and rural landscapes
+   Colors: Earthy greens, warm browns, sky blues, golden accents
+*/
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 35s linear infinite;
+}
+
+@layer base {
+  :root {
+    /* Primary - Forest Green */
+    --primary: 142 50% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Background - Warm off-white */
+    --background: 45 30% 98%;
+    --foreground: 142 30% 15%;
+
+    /* Card - Clean white with subtle warmth */
+    --card: 0 0% 100%;
+    --card-foreground: 142 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 142 30% 15%;
+
+    /* Secondary - Sage green */
+    --secondary: 142 25% 92%;
+    --secondary-foreground: 142 50% 20%;
+
+    /* Muted - Warm gray */
+    --muted: 45 15% 92%;
+    --muted-foreground: 142 15% 45%;
+
+    /* Accent - Warm gold/amber for CTAs */
+    --accent: 38 92% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 142 20% 88%;
+    --input: 142 20% 88%;
+    --ring: 142 50% 28%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradient tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(142 50% 28%) 0%, hsl(142 40% 35%) 50%, hsl(160 45% 30%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(45 95% 55%) 100%);
+    --gradient-nature: linear-gradient(180deg, hsl(200 60% 70% / 0.3) 0%, hsl(142 50% 28% / 0.1) 100%);
+
+    /* Shadow tokens */
+    --shadow-soft: 0 4px 20px -4px hsl(142 30% 15% / 0.1);
+    --shadow-card: 0 8px 30px -8px hsl(142 30% 15% / 0.12);
+    --shadow-elevated: 0 20px 50px -15px hsl(142 30% 15% / 0.2);
+
+    /* Sidebar (not used but keeping for compatibility) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 142 30% 20%;
+    --sidebar-primary: 142 50% 28%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 142 25% 92%;
+    --sidebar-accent-foreground: 142 50% 20%;
+    --sidebar-border: 142 20% 88%;
+    --sidebar-ring: 142 50% 28%;
+  }
+
+  .dark {
+    --background: 142 30% 8%;
+    --foreground: 45 20% 95%;
+
+    --card: 142 25% 12%;
+    --card-foreground: 45 20% 95%;
+
+    --popover: 142 25% 12%;
+    --popover-foreground: 45 20% 95%;
+
+    --primary: 142 45% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 20% 18%;
+    --secondary-foreground: 45 20% 90%;
+
+    --muted: 142 20% 18%;
+    --muted-foreground: 142 15% 60%;
+
+    --accent: 38 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 142 20% 20%;
+    --input: 142 20% 20%;
+    --ring: 142 45% 45%;
+
+    --sidebar-background: 142 30% 10%;
+    --sidebar-foreground: 45 20% 95%;
+    --sidebar-primary: 142 45% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 142 20% 18%;
+    --sidebar-accent-foreground: 45 20% 90%;
+    --sidebar-border: 142 20% 20%;
+    --sidebar-ring: 142 45% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-hero);
+  }
+
+  .bg-gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+
+  .bg-gradient-accent {
+    background-image: var(--gradient-accent);
+  }
+
+  .bg-gradient-nature {
+    background-image: var(--gradient-nature);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  /* Leaf pattern overlay */
+  .pattern-leaves {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5C20 15 15 25 20 35C25 45 35 45 40 35C45 25 40 15 30 5Z' fill='%23166534' fill-opacity='0.03'/%3E%3C/svg%3E");
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
