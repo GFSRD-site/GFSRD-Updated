@@ -51,9 +51,9 @@ export default function Academy() {
 
                   <div className="flex items-start gap-4 mb-4">
                     <div className="w-20 h-20 shrink-0 rounded-xl bg-secondary/60 border border-border flex items-center justify-center overflow-hidden p-2 group-hover:scale-105 transition-transform duration-300">
-                      {(article as any).icon ? (
+                      {article.logo ? (
                         <img
-                          src={(article as any).icon}
+                          src={article.logo}
                           alt={article.shortTitle}
                           className="w-full h-full object-contain"
                           onError={(e) => {

@@ -1,14 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, BookOpen, Leaf, TreePine, GraduationCap, CloudSun, Users, Wifi, Heart, Mountain, Building, Stethoscope, Briefcase, ArrowLeftRight, Microscope, HandHeart, Sparkles } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import { ArrowRight, BookOpen } from "lucide-react";
 import academyData from "@/data/academyArticles.json";
-
-const iconMap: Record<string, LucideIcon> = {
-  Leaf, TreePine, GraduationCap, CloudSun, Users, Wifi, Heart, Mountain,
-  BookOpen, Building, Stethoscope, Briefcase, ArrowLeftRight, Microscope,
-  HandHeart, Sparkles,
-};
 
 export function AcademyScrollbar() {
   const articles = academyData.articles;
@@ -45,22 +38,19 @@ export function AcademyScrollbar() {
       <div className="relative">
         <div className="flex animate-scroll gap-6 px-4" style={{ width: "max-content" }}>
           {duplicated.map((article, i) => {
-            const a = article as any;
-            const Icon = iconMap[a.icon] || BookOpen;
-            const hasLogo = a.icon && a.icon.length > 0;
             return (
               <Link
                 key={`${article.id}-${i}`}
                 to={`/academy/${article.id}`}
                 className="group flex-shrink-0 w-72 bg-card rounded-2xl border border-border/50 p-6 hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
               >
-                {hasLogo ? (
+                {article.logo ? (
                   <div className="w-16 h-16 rounded-xl overflow-hidden mb-4 bg-muted flex items-center justify-center">
-                    <img src={a.icon} alt={article.shortTitle} className="w-full h-full object-contain" />
+                    <img src={article.logo} alt={article.shortTitle} className="w-full h-full object-contain" />
                   </div>
                 ) : (
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <Icon className="w-6 h-6 text-primary" />
+                    <BookOpen className="w-6 h-6 text-primary" />
                   </div>
                 )}
                 <h3 className="font-display text-base font-semibold text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors">

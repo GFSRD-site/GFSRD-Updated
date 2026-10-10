@@ -14,12 +14,12 @@ import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
-
 import Internship from "./pages/Internship";
 import People from "./pages/People";
 import TeamProfile from "./pages/TeamProfile";
 import IndiaInitiative from "./pages/IndiaInitiative";
 import Partners from "./pages/Partner";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +29,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/academy" element={<Academy />} />

@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Target, Eye, ListChecks, Sparkles, BookOpen, User, Mail, Phone, Linkedin } from "lucide-react";
+import { ArrowLeft, Target, Eye, ListChecks, Sparkles, BookOpen, User, Mail, Phone, Linkedin, Handshake } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import academyData from "@/data/academyArticles.json";
@@ -86,8 +86,8 @@ export default function AcademyArticle() {
             animate={{ opacity: 1, y: 0 }}
             className="bg-card rounded-2xl shadow-card border border-border p-6 md:p-8 lg:sticky lg:top-28"
           >
-            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-accent mb-4">
-              Part 1 — Academy Head
+            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-accent mb-4 ml-24">
+                    Academy Head
             </span>
             <div className="flex flex-col gap-5 items-center text-center">
               <div className="w-full aspect-[4/5] max-w-[280px] rounded-xl bg-secondary/50 border border-border flex items-center justify-center overflow-hidden">
@@ -129,6 +129,13 @@ export default function AcademyArticle() {
                     </a>
                   )}
                 </div>
+                <Link
+                  to="/#join-us"
+                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-hero px-5 py-3 text-sm font-semibold text-primary-foreground shadow-soft hover:shadow-elevated hover:-translate-y-0.5 transition-all"
+                >
+                  <Handshake className="w-4 h-4" />
+                  Join with Us
+                </Link>
               </div>
             </div>
           </motion.div>
@@ -141,7 +148,7 @@ export default function AcademyArticle() {
             className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-sm space-y-8"
           >
             <span className="inline-block text-xs font-semibold uppercase tracking-wider text-primary mb-2">
-              Part 2 — Centre Details
+              Centre Details
             </span>
 
             {article.content && (

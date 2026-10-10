@@ -1,16 +1,15 @@
-import { Link } from "react-router-dom";
 import { ArrowLeft, Newspaper, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Header } from "@/components/Header";
 import mediaCoverageData from "@/data/mediaCoverage.json";
 
 const SLIDE_IMAGES = [
-  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=500&fit=crop",
-  "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&h=500&fit=crop",
-  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=500&fit=crop",
-  "https://images.unsplash.com/photo-1591115765373-5f9cf1da241d?w=800&h=500&fit=crop",
-  "https://images.unsplash.com/photo-1497493292307-31c376b6e479?w=800&h=500&fit=crop",
+  { src: "/media/media-mou-banner.png", alt: "GFSRD sign MoU to advance rural development" },
+  { src: "/media/media-itn-malang-group.png", alt: "Conference group outside ITN Malang University" },
+  { src: "/media/media-sustainable-rural-development-speaker.png", alt: "Speaker presenting on sustainable rural development" },
+  { src: "/media/media-conference-participants.png", alt: "Participants at a sustainable rural development conference" },
+  { src: "/media/media-conference-flyer.png", alt: "Global Conference Series on localising sustainable development goals" },
 ];
 
 export default function MediaCoverage() {
@@ -19,7 +18,6 @@ export default function MediaCoverage() {
 
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const go = useCallback((next: number, dir: number) => {
     setDirection(dir);
@@ -60,33 +58,35 @@ export default function MediaCoverage() {
         </div>
 
         {/* Image Slider + Sidebar News */}
-        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 mb-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] gap-6 mb-10 items-stretch">
           {/* Image Slider */}
-          <div className="relative rounded-xl overflow-hidden h-[280px] md:h-[380px] bg-muted">
+          <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[480px] rounded-xl overflow-hidden bg-muted">
             <AnimatePresence initial={false} custom={direction} mode="popLayout">
               <motion.img
                 key={current}
-                src={SLIDE_IMAGES[current]}
-                alt={`Slide ${current + 1}`}
+                src={SLIDE_IMAGES[current].src}
+                alt={SLIDE_IMAGES[current].alt}
                 custom={direction}
                 variants={variants}
                 initial="enter"
                 animate="center"
                 exit="exit"
                 transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-contain bg-muted"
               />
             </AnimatePresence>
 
             {/* Nav buttons */}
             <button
               onClick={goPrev}
+              aria-label="Previous image"
               className="absolute left-3 top-1/2 -translate-y-1/2 z-10 h-9 w-9 rounded-full bg-background/80 backdrop-blur flex items-center justify-center hover:bg-background transition"
             >
               <ChevronLeft className="h-5 w-5 text-foreground" />
             </button>
             <button
               onClick={goNext}
+              aria-label="Next image"
               className="absolute right-3 top-1/2 -translate-y-1/2 z-10 h-9 w-9 rounded-full bg-background/80 backdrop-blur flex items-center justify-center hover:bg-background transition"
             >
               <ChevronRight className="h-5 w-5 text-foreground" />
@@ -94,10 +94,12 @@ export default function MediaCoverage() {
 
             {/* Dots */}
             <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-              {SLIDE_IMAGES.map((_, i) => (
+              {SLIDE_IMAGES.map((image, i) => (
                 <button
                   key={i}
                   onClick={() => go(i, i > current ? 1 : -1)}
+                  aria-label={`Show image ${i + 1}: ${image.alt}`}
+                  aria-current={i === current ? "true" : undefined}
                   className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                     i === current ? "bg-primary scale-125" : "bg-background/60"
                   }`}
@@ -107,7 +109,7 @@ export default function MediaCoverage() {
           </div>
 
           {/* Sidebar - 6 News */}
-          <div className="flex flex-col gap-3">
+          <div className="grid grid-rows-[auto_repeat(6,minmax(0,1fr))] gap-3">
             <h2 className="font-playfair text-lg font-bold text-foreground mb-1">Latest News</h2>
             {sidebarNews.map((article, i) => (
               <motion.a

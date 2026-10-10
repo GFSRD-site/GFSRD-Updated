@@ -25,7 +25,7 @@ const navItems = [
   { name: "Media", href: "/media-coverage" },
   { name: "Event", href: "/#news-events" },
   { name: "Team", href: "/people" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 export function Header() {
