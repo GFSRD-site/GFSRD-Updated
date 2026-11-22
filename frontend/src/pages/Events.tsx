@@ -39,7 +39,7 @@ const formatDate = (iso: string) => {
 };
 
 export default function Events() {
-  const [filter, setFilter] = useState<"past" >("past");
+  const [filter, setFilter] = useState<"all" | "upcoming" | "past">("all");
   const [query, setQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -53,22 +53,24 @@ export default function Events() {
 
     return (eventsData.events as Event[])
       .filter((e) => {
+        if (filter === "all") return true;
+        if (!e.endTime) return false;
         if (filter === "past") return new Date(e.endTime) < now;
-        return true;
+        return new Date(e.endTime) >= now;
       })
       .filter((e) =>
         q
           ? e.title.toLowerCase().includes(q) ||
-          e.location.toLowerCase().includes(q)
+            e.type.toLowerCase().includes(q) ||
+            e.location.toLowerCase().includes(q) ||
+            e.organiser.toLowerCase().includes(q)
           : true
       )
-      .sort((a, b) =>
-        filter === "past"
-          ? new Date(b.startTime).getTime() -
-          new Date(a.startTime).getTime()
-          : new Date(a.startTime).getTime() -
-          new Date(b.startTime).getTime()
-      );
+      .sort((a, b) => {
+        const aStart = a.startTime ? new Date(a.startTime).getTime() : 0;
+        const bStart = b.startTime ? new Date(b.startTime).getTime() : 0;
+        return filter === "upcoming" ? aStart - bStart : bStart - aStart;
+      });
   }, [filter, query]);
 
   const totalPages = Math.ceil(filteredEvents.length / EVENTS_PER_PAGE);
@@ -94,13 +96,27 @@ export default function Events() {
             </h1>
 
             <p className="text-sm text-muted-foreground">
-              Past Conferences, symposiums, workshops and summits by GFSRD.
+              Browse all conferences, seminars, workshops and other events by GFSRD.
             </p>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row gap-3 md:items-center md:justify-between mb-6">
-          
+          <Select
+            value={filter}
+            onValueChange={(value) =>
+              setFilter(value as "all" | "upcoming" | "past")
+            }
+          >
+            <SelectTrigger className="w-full md:w-48">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">All events</SelectItem>
+              <SelectItem value="upcoming">Upcoming events</SelectItem>
+              <SelectItem value="past">Past events</SelectItem>
+            </SelectContent>
+          </Select>
 
           <div className="relative w-full md:w-80">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
@@ -137,6 +153,7 @@ export default function Events() {
                   <User className="inline w-4 h-4 mr-1" />
                   Organiser
                 </TableHead>
+                <TableHead>Media &amp; Coverage</TableHead>
               </TableRow>
             </TableHeader>
 
@@ -144,7 +161,7 @@ export default function Events() {
               {events.length === 0 && (
                 <TableRow>
                   <TableCell
-                    colSpan={8}
+                    colSpan={9}
                     className="text-center py-10 text-muted-foreground"
                   >
                     No events found.
@@ -153,8 +170,12 @@ export default function Events() {
               )}
 
               {events.map((e, i) => {
-                const s = formatDate(e.startTime);
-                const en = formatDate(e.endTime);
+                const s = e.startTime ? formatDate(e.startTime) : null;
+                const en = e.endTime ? formatDate(e.endTime) : null;
+                const brochures = [
+                  e.brochure,
+                  ...(e.additionalBrochures ?? []),
+                ];
 
                 return (
                   <TableRow key={e.id}>
@@ -173,31 +194,64 @@ export default function Events() {
                     </TableCell>
 
                     <TableCell className="text-sm">
-                      <div>{s.date}</div>
-                      <div className="text-muted-foreground text-xs">
-                        {s.time}
-                      </div>
+                      {s ? (
+                        <>
+                          <div>{s.date}</div>
+                          <div className="text-muted-foreground text-xs">
+                            {s.time}
+                          </div>
+                        </>
+                      ) : (
+                        <span className="text-muted-foreground">Not provided</span>
+                      )}
                     </TableCell>
 
                     <TableCell className="text-sm">
-                      <div>{en.date}</div>
-                      <div className="text-muted-foreground text-xs">
-                        {en.time}
-                      </div>
+                      {en ? (
+                        <>
+                          <div>{en.date}</div>
+                          <div className="text-muted-foreground text-xs">
+                            {en.time}
+                          </div>
+                        </>
+                      ) : (
+                        <span className="text-muted-foreground">Not provided</span>
+                      )}
                     </TableCell>
 
                     <TableCell>
-                      <a
-                        href={e.brochure}
-                        className="text-primary hover:underline inline-flex items-center gap-1 text-sm"
-                      >
-                        Click Here
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
+                      <div className="flex flex-col items-start gap-1">
+                        {brochures.map((brochure, index) => (
+                          <a
+                            key={brochure}
+                            href={brochure}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline inline-flex items-center gap-1 text-sm"
+                          >
+                            {brochures.length > 1
+                              ? `Brochure ${index + 1}`
+                              : "View brochure"}
+                            <ExternalLink className="w-3 h-3" />
+                          </a>
+                        ))}
+                      </div>
                     </TableCell>
 
                     <TableCell className="text-sm text-primary">
-                      {e.location}
+                      {e.locationUrl ? (
+                        <a
+                          href={e.locationUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline inline-flex items-center gap-1"
+                        >
+                          {e.location}
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      ) : (
+                        e.location
+                      )}
                     </TableCell>
 
                     <TableCell className="text-sm">
@@ -207,6 +261,9 @@ export default function Events() {
                       >
                         {e.organiser}
                       </a>
+                    </TableCell>
+                    <TableCell className="text-sm">
+                      {e.mediaCoverage || "—"}
                     </TableCell>
                   </TableRow>
                 );

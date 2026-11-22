@@ -63,7 +63,7 @@ export const EventsSection = () => {
               </SelectContent>
             </Select>
             <Link
-              to="/events"
+              to="/event"
               className="hidden md:inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
             >
               View all <ArrowRight className="w-4 h-4" />

@@ -23,7 +23,7 @@ const navItems = [
   { name: "About", href: "/about" },
   { name: "Academy", href: "/academy", isRoute: true },
   { name: "Media", href: "/media-coverage" },
-  { name: "Event", href: "/#news-events" },
+  { name: "Events", href: "/event", isRoute: true },
   { name: "Team", href: "/people" },
   { name: "Contact", href: "/#contact" },
 ];
