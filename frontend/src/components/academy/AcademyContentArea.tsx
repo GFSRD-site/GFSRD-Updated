@@ -75,69 +75,77 @@ export function AcademyContentArea({
         {/* 1. ABOUT US (Profile / Department Overview) */}
         {/* ============================================================ */}
         {activeSection === "about-us" && (
-          <div>
+          <div className="space-y-6">
             {article.content && (
               <p className="text-slate-800 text-base leading-relaxed whitespace-pre-line">
                 {article.content}
               </p>
             )}
-          </div>
-        )}
-
-        {/* ============================================================ */}
-        {/* 2. VISION */}
-        {/* ============================================================ */}
-        {activeSection === "vision" && (
-          <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2.5 rounded-lg bg-[#1e4d2b]/10 text-[#1e4d2b]">
-                <Eye className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 uppercase tracking-wide">
-                Vision
-              </h3>
-            </div>
-
-            {article.vision ? (
-              <div className="bg-slate-50 border-l-4 border-[#1e4d2b] p-6 rounded-r-lg shadow-xs">
-                <p className="text-slate-800 text-base sm:text-lg leading-relaxed whitespace-pre-line">
-                  {article.vision}
-                </p>
-              </div>
-            ) : (
-              <p className="text-slate-500 text-sm italic">No vision details available.</p>
-            )}
-          </div>
-        )}
-
-        {/* ============================================================ */}
-        {/* 3. MISSION */}
-        {/* ============================================================ */}
-        {activeSection === "mission" && (
-          <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2.5 rounded-lg bg-[#1e4d2b]/10 text-[#1e4d2b]">
-                <Target className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 uppercase tracking-wide">
-                Mission
-              </h3>
-            </div>
-
-            {article.mission ? (
-              <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-xs">
-                <p className="text-slate-800 text-base sm:text-lg leading-relaxed whitespace-pre-line">
+            {article.mission && (
+              <section className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-[#1e4d2b]/10 text-[#1e4d2b]">
+                    <Target className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 uppercase tracking-wide">
+                    Mission
+                  </h3>
+                </div>
+                <p className="text-slate-800 text-base leading-relaxed whitespace-pre-line">
                   {article.mission}
                 </p>
-              </div>
-            ) : (
-              <p className="text-slate-500 text-sm italic">No mission details available.</p>
+              </section>
+            )}
+            {article.vision && (
+              <section className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-[#1e4d2b]/10 text-[#1e4d2b]">
+                    <Eye className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 uppercase tracking-wide">
+                    Vision
+                  </h3>
+                </div>
+                <p className="text-slate-800 text-base leading-relaxed whitespace-pre-line">
+                  {article.vision}
+                </p>
+              </section>
+            )}
+            {objectivesList.length > 0 && (
+              <section className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-[#1e4d2b]/10 text-[#1e4d2b]">
+                    <ListChecks className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 uppercase tracking-wide">
+                    Objectives
+                  </h3>
+                </div>
+                <ul className="space-y-3">
+                  {objectivesList.map((obj, index) => (
+                    <li
+                      key={index}
+                      className="flex items-start gap-3 text-slate-800 text-sm sm:text-base leading-relaxed"
+                    >
+                      <span className="text-[#1e4d2b] font-bold mt-1 shrink-0">●</span>
+                      <div>
+                        {obj.title && (
+                          <strong className="text-slate-900 font-bold">
+                            {obj.title}:{" "}
+                          </strong>
+                        )}
+                        <span>{obj.description}</span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </section>
             )}
           </div>
         )}
 
         {/* ============================================================ */}
-        {/* 4. PLAN */}
+        {/* 2. PLAN */}
         {/* ============================================================ */}
         {activeSection === "plan" && (
           <div className="space-y-6">
@@ -160,47 +168,6 @@ export function AcademyContentArea({
               <div className="bg-slate-50 border border-slate-200 rounded-lg p-6 text-slate-600 text-sm">
                 Plan details coming soon.
               </div>
-            )}
-          </div>
-        )}
-
-        {/* ============================================================ */}
-        {/* 5. OBJECTIVES */}
-        {/* ============================================================ */}
-        {activeSection === "objectives" && (
-          <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2.5 rounded-lg bg-[#1e4d2b]/10 text-[#1e4d2b]">
-                <ListChecks className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 uppercase tracking-wide">
-                Objectives
-              </h3>
-            </div>
-
-            {objectivesList.length > 0 ? (
-              <ul className="space-y-4">
-                {objectivesList.map((obj, index) => (
-                  <li
-                    key={index}
-                    className="flex items-start gap-3 text-slate-800 text-sm sm:text-base leading-relaxed"
-                  >
-                    <span className="text-[#1e4d2b] font-bold mt-1 shrink-0">●</span>
-                    <div>
-                      {obj.title && (
-                        <strong className="text-slate-900 font-bold">
-                          {obj.title}:{" "}
-                        </strong>
-                      )}
-                      <span>{obj.description}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="text-slate-500 text-sm italic">
-                No objectives details available.
-              </p>
             )}
           </div>
         )}

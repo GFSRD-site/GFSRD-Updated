@@ -22,10 +22,7 @@ export default function AcademyArticle() {
   const urlSection = searchParams.get("section") as AcademySection | null;
   const validSections: AcademySection[] = [
     "about-us",
-    "vision",
-    "mission",
     "plan",
-    "objectives",
     "people-head",
     "people-team",
     "join-us",
@@ -119,7 +116,7 @@ export default function AcademyArticle() {
                   to="/academy"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1e4d2b] hover:underline"
                 >
-                  View All 15 Centres <ChevronRight className="w-3.5 h-3.5" />
+                  View All {academyData.articles.length} Centres <ChevronRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
             </aside>

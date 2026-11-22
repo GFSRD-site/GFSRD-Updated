@@ -50,7 +50,7 @@ export default function Academy() {
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-hero opacity-0 group-hover:opacity-100 transition-opacity" />
 
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="w-20 h-20 shrink-0 rounded-xl bg-secondary/60 border border-border flex items-center justify-center overflow-hidden p-2 group-hover:scale-105 transition-transform duration-300">
+                    <div className={`w-20 h-20 shrink-0 ${article.id === "global-peace-cultural-center" ? "rounded-full" : "rounded-xl"} bg-secondary/60 border border-border flex items-center justify-center overflow-hidden p-2 group-hover:scale-105 transition-transform duration-300`}>
                       {article.logo ? (
                         <img
                           src={article.logo}

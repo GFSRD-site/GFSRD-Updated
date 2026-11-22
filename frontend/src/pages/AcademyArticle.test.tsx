@@ -47,36 +47,29 @@ describe("AcademyArticle Redesign", () => {
     expect(navs.length).toBeGreaterThanOrEqual(1);
 
     expect(screen.getByRole("button", { name: /^About Us$/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /^Vision$/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /^Mission$/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /^Plan$/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /^Objectives$/i })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /^Vision$/i })).not.toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /^Mission$/i })).not.toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /^Objectives$/i })).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: /People/i })).toBeInTheDocument();
     expect(screen.getAllByRole("button", { name: /Join Us/i })[0]).toBeInTheDocument();
   });
 
-  it("dynamically switches content when clicking Quick View items", () => {
+  it("shows mission, vision, and objectives together under About Us", () => {
     renderComponent("sustainable-agriculture");
 
-    // Click Vision
-    const visionBtn = screen.getByRole("button", { name: /^Vision$/i });
-    fireEvent.click(visionBtn);
     expect(screen.getByRole("heading", { name: /^Vision$/i })).toBeInTheDocument();
-
-    // Click Mission
-    const missionBtn = screen.getByRole("button", { name: /^Mission$/i });
-    fireEvent.click(missionBtn);
     expect(screen.getByRole("heading", { name: /^Mission$/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /^Objectives$/i })).toBeInTheDocument();
+    expect(screen.getByText(/The mission of GCSAFS/i)).toBeInTheDocument();
+  });
 
+  it("keeps the Plan section accessible from Quick View", () => {
+    renderComponent("sustainable-agriculture");
     // Click Plan
     const planBtn = screen.getByRole("button", { name: /^Plan$/i });
     fireEvent.click(planBtn);
     expect(screen.getByRole("heading", { name: /^Plan$/i })).toBeInTheDocument();
-
-    // Click Objectives
-    const objBtn = screen.getByRole("button", { name: /^Objectives$/i });
-    fireEvent.click(objBtn);
-    expect(screen.getByRole("heading", { name: /^Objectives$/i })).toBeInTheDocument();
   });
 
   it("renders People section with Academy Head and Team", () => {

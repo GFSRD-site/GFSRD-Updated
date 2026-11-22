@@ -4,10 +4,7 @@ import { cn } from "@/lib/utils";
 
 export type AcademySection =
   | "about-us"
-  | "vision"
-  | "mission"
   | "plan"
-  | "objectives"
   | "people-head"
   | "people-team"
   | "join-us"
@@ -81,33 +78,7 @@ export function AcademyQuickViewSidebar({
             <span>About Us</span>
           </button>
 
-          {/* 2. Vision */}
-          <button
-            onClick={() => handleSelect("vision")}
-            className={cn(
-              "w-full text-left px-5 py-3 transition-colors flex items-center justify-between",
-              activeSection === "vision"
-                ? "bg-[#1e4d2b] text-white font-bold"
-                : "text-slate-800 hover:bg-slate-50"
-            )}
-          >
-            <span>Vision</span>
-          </button>
-
-          {/* 3. Mission */}
-          <button
-            onClick={() => handleSelect("mission")}
-            className={cn(
-              "w-full text-left px-5 py-3 transition-colors flex items-center justify-between",
-              activeSection === "mission"
-                ? "bg-[#1e4d2b] text-white font-bold"
-                : "text-slate-800 hover:bg-slate-50"
-            )}
-          >
-            <span>Mission</span>
-          </button>
-
-          {/* 4. Plan */}
+          {/* 2. Plan */}
           <button
             onClick={() => handleSelect("plan")}
             className={cn(
@@ -120,20 +91,7 @@ export function AcademyQuickViewSidebar({
             <span>Plan</span>
           </button>
 
-          {/* 5. Objectives */}
-          <button
-            onClick={() => handleSelect("objectives")}
-            className={cn(
-              "w-full text-left px-5 py-3 transition-colors flex items-center justify-between",
-              activeSection === "objectives"
-                ? "bg-[#1e4d2b] text-white font-bold"
-                : "text-slate-800 hover:bg-slate-50"
-            )}
-          >
-            <span>Objectives</span>
-          </button>
-
-          {/* 6. People (Expandable Accordion) */}
+          {/* 3. People (Expandable Accordion) */}
           <div className="flex flex-col">
             <button
               onClick={() => setPeopleOpen(!peopleOpen)}
@@ -200,7 +158,7 @@ export function AcademyQuickViewSidebar({
             )}
           </div>
 
-          {/* 7. Join Us */}
+          {/* 4. Join Us */}
           <button
             onClick={() => handleSelect("join-us")}
             className={cn(
@@ -213,7 +171,7 @@ export function AcademyQuickViewSidebar({
             <span>Join Us</span>
           </button>
 
-          {/* 8. Conclusion (If exists) */}
+          {/* 5. Conclusion (If exists) */}
           {hasConclusion && (
             <button
               onClick={() => handleSelect("conclusion")}
